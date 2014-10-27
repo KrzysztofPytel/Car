@@ -1,5 +1,4 @@
 <?php
-
 include('interface.Engine.php');
 
 class Engine implements EngineInterface {
