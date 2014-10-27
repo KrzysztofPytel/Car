@@ -1,10 +1,8 @@
 <?php
-
 include('interface.Car.php');
 require('class.Engine.php');
 
 class Car implements RaceCarInterface {
-
     private $model;
     private $vMax;
     private $acc;
@@ -15,7 +13,7 @@ class Car implements RaceCarInterface {
         $engine = new Engine();
         $this->hp = $engine->getHP($hp);
     }
-
+    
     public function getVMax() {
         $this->vMax = 1.3 * $this->hp;
         return $this->vMax;
@@ -25,5 +23,4 @@ class Car implements RaceCarInterface {
         $this->acc = $this->hp * $this->vMax / 5000;
         return $this->acc;
     }
-
 }
