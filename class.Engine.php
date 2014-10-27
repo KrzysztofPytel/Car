@@ -6,12 +6,8 @@ class Engine implements EngineInterface {
 
     private $hp;
 
-    public function setHP($hp) {
-        $this->hp = $hp;
-    }
-
-    public function getHP() {
+    public function getHP($hp) {
+		$this->hp = $hp;
         return $this->hp;
     }
-
 }
