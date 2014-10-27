@@ -3,7 +3,6 @@
 include('interface.Engine.php');
 
 class Engine implements EngineInterface {
-
     private $hp;
 
     public function getHP($hp) {
