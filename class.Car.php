@@ -5,16 +5,15 @@ require('class.Engine.php');
 
 class Car implements RaceCarInterface {
 
+    private $model;
     private $vMax;
     private $acc;
-    private $model;
     private $hp;
-    
+
     public function __construct($model, $hp) {
         $this->model = $model;
         $engine = new Engine();
-        $engine->setHP($hp);
-        $this->hp = $engine->getHP();
+        $this->hp = $engine->getHP($hp);
     }
 
     public function getVMax() {
