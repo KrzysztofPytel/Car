@@ -2,5 +2,5 @@
 
 interface EngineInterface {
 
-    public function getHP();
+    public function getHP($hp);
 }
